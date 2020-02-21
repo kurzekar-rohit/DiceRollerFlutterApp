@@ -14,13 +14,13 @@ class _HomePageState extends State<HomePage> {
   AssetImage five = AssetImage("images/five.png");
   AssetImage six = AssetImage("images/six.png");
 
-  AssetImage diceimage;
+  AssetImage diceimage1;
   AssetImage dice_image;
   @override
   void initState() {
     super.initState();
     setState(() {
-      diceimage = one;
+      diceimage1 = one;
       dice_image = two;
     });
   }
@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage> {
         break;
     }
     setState(() {
-      diceimage = newImage;
+      diceimage1 = newImage;
       dice_image = new_Image;
     });
   }
@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
               // ),
             Container(
               child: Image(
-                image: diceimage,
+                image: diceimage1,
                 width: 200.0,
                 height: 200.0,
                 
